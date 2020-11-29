@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="userdata()">
+    <div id="div1">
+        <h1>Book a <span class="call-txt">Call</span></h1>
+        <hr>
+    <form id="form1">
+        <label for="name">Name</label> 
+        <input type="text"id="name" > 
+        <label for="Email">Email</label> 
+        <input type="text"id="Email" >
+        <label for="Pno">Phone Number</label> 
+        <input type="text"id="Pno" > 
+        <label for="date">Time for call</label>
+        <div class="B">
+        <input class="A"type="date"id="date">
+        <select class="A" id="time">
+            <option>11:00 AM</option>
+            <option>12:00 PM</option>
+            <option>3:00 PM</option>
+            <option>5:00 PM</option>
+            <option>7:00 PM</option>
+        </select></div>
+        <button type="button" onclick="store(), printDetails()">Get A Call</button>   
+        
+    </form>
+</div>
+<div class="usr-entry">
+    <h3>Users entry</h3>
+    <hr>
+    <p id="ud1"></p>
+    <h3 id="ud2"></h3>
+    <h3 id="ud3"></h3>
+    <h3 id="ud4"></h3>
+    <h3 id="ud5"></h3>
+</div>
+
+    <script src="index.js">
+    
+    </script>
+</body>
+</html>
